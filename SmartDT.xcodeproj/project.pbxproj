@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		425C97222B5F0999003CC658 /* SmartDTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C97212B5F0999003CC658 /* SmartDTApp.swift */; };
-		425C97242B5F0999003CC658 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C97232B5F0999003CC658 /* ContentView.swift */; };
 		425C97262B5F099A003CC658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425C97252B5F099A003CC658 /* Assets.xcassets */; };
 		425C97292B5F099A003CC658 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425C97282B5F099A003CC658 /* Preview Assets.xcassets */; };
+		425C97342B5F0A7F003CC658 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C97332B5F0A7F003CC658 /* ContentView2.swift */; };
+		425C97362B5F0A9D003CC658 /* SettingView12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C97352B5F0A9D003CC658 /* SettingView12.swift */; };
+		425C97382B5F0AB9003CC658 /* StartGame2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C97372B5F0AB9003CC658 /* StartGame2.swift */; };
+		425C973A2B5F1164003CC658 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C97392B5F1164003CC658 /* CameraView.swift */; };
+		425C973C2B5F13C5003CC658 /* viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425C973B2B5F13C5003CC658 /* viewmodel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		425C971E2B5F0999003CC658 /* SmartDT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartDT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		425C97212B5F0999003CC658 /* SmartDTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartDTApp.swift; sourceTree = "<group>"; };
-		425C97232B5F0999003CC658 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		425C97252B5F099A003CC658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		425C97282B5F099A003CC658 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		425C97332B5F0A7F003CC658 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		425C97352B5F0A9D003CC658 /* SettingView12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView12.swift; sourceTree = "<group>"; };
+		425C97372B5F0AB9003CC658 /* StartGame2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGame2.swift; sourceTree = "<group>"; };
+		425C97392B5F1164003CC658 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = SmartDT/CameraView.swift; sourceTree = SOURCE_ROOT; };
+		425C973B2B5F13C5003CC658 /* viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewmodel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +60,13 @@
 			isa = PBXGroup;
 			children = (
 				425C97212B5F0999003CC658 /* SmartDTApp.swift */,
-				425C97232B5F0999003CC658 /* ContentView.swift */,
 				425C97252B5F099A003CC658 /* Assets.xcassets */,
 				425C97272B5F099A003CC658 /* Preview Content */,
+				425C97332B5F0A7F003CC658 /* ContentView2.swift */,
+				425C97352B5F0A9D003CC658 /* SettingView12.swift */,
+				425C97372B5F0AB9003CC658 /* StartGame2.swift */,
+				425C97392B5F1164003CC658 /* CameraView.swift */,
+				425C973B2B5F13C5003CC658 /* viewmodel.swift */,
 			);
 			path = SmartDT;
 			sourceTree = "<group>";
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				425C97242B5F0999003CC658 /* ContentView.swift in Sources */,
+				425C973C2B5F13C5003CC658 /* viewmodel.swift in Sources */,
+				425C97362B5F0A9D003CC658 /* SettingView12.swift in Sources */,
+				425C97342B5F0A7F003CC658 /* ContentView2.swift in Sources */,
 				425C97222B5F0999003CC658 /* SmartDTApp.swift in Sources */,
+				425C97382B5F0AB9003CC658 /* StartGame2.swift in Sources */,
+				425C973A2B5F1164003CC658 /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,12 +288,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartDT/Preview Content\"";
+				DEVELOPMENT_TEAM = HY86C25C92;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "computer vision";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,12 +317,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartDT/Preview Content\"";
+				DEVELOPMENT_TEAM = HY86C25C92;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "computer vision";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
